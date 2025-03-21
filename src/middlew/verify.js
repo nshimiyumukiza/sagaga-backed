@@ -13,7 +13,7 @@ const verifyAccess = (passRole) =>{
                 }
             } catch (error) {
                 if(error.name ="jsonwebtoken"){
-                    res.status(500).json({message:"invalid email or expired"})
+                    res.status(500).json({error:error.message})
                 }
                 
             }

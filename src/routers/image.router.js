@@ -1,8 +1,9 @@
 import express from "express";
-import { createImg, getImg } from "../controllers/image.controller.js";
+import { createImg,getImage } from "../controllers/image.controller.js";
 
-const router = express.Router()
+const router = express.Router();
 router.post("/",createImg);
-router.get("/",getImg);
+router.get("/",getImage);
+
 
 export default router;
